@@ -1,4 +1,5 @@
-export function GET(context) {
+import type { APIContext } from "astro";
+export function GET(context: APIContext) {
     const runtime = context.locals.runtime;
 
     console.log('Runtime:', runtime);
