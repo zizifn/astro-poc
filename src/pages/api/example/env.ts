@@ -4,7 +4,7 @@ export function GET(context: APIContext) {
     return Response.json(
       {
         "testVar": env.testVar,
-        "testAPIToken": env.testAPIToken
+        "testAPIToken": env.testAPIToken // 这个是secert
       }
     );
   }
