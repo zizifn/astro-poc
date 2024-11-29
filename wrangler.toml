@@ -1,0 +1,7 @@
+name = "astro-poc"
+
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "./dist"
+
+[vars]
+testVar="prod"
