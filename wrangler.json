@@ -1,0 +1,7 @@
+{
+    "name": "astro-poc",
+    "vars": {
+      "testVar": "pord",
+      "testAPIToken": "secret"
+    }
+  }
