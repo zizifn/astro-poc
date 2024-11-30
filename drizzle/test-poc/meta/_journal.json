@@ -5,8 +5,22 @@
     {
       "idx": 0,
       "version": "6",
-      "when": 1732962421349,
-      "tag": "0000_slimy_weapon_omega",
+      "when": 1732967258868,
+      "tag": "0000_simple_gargoyle",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1732967428169,
+      "tag": "0001_modern_king_bedlam",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1732967525941,
+      "tag": "0002_serious_dazzler",
       "breakpoints": true
     }
   ]

@@ -6,7 +6,11 @@
     "dev": "wrangler types && astro dev",
     "build": "wrangler types && astro check && astro build",
     "preview": "wrangler types && astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "drizzle-kit:generate": "drizzle-kit generate --config=config/drizzle.test-poc.config.ts",
+    "drizzle-kit:migrate": "drizzle-kit migrate --config=config/drizzle.test-poc.config.ts",
+    "drizzle-kit:generate:remote": "cross-env drizzle_env=production npm run drizzle-kit:generate",
+    "drizzle-kit:migrate:remote": "cross-env drizzle_env=production npm run drizzle-kit:migrate" 
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -19,6 +23,8 @@
     "typescript": "^5.7.2"
   },
   "devDependencies": {
+    "@libsql/client": "^0.14.0",
+    "cross-env": "^7.0.3",
     "drizzle-kit": "^0.28.1"
   }
 }

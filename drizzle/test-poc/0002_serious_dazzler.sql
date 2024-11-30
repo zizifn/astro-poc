@@ -1,0 +1,1 @@
+ALTER TABLE `test` ADD `colum1` text DEFAULT '' NOT NULL;
