@@ -1,3 +1,4 @@
+#:schema node_modules/wrangler/config-schema.json
 name = "astro-poc"
 compatibility_date = "2024-11-29"
 compatibility_flags = ["nodejs_compat"]
@@ -5,3 +6,7 @@ pages_build_output_dir = "./dist"
 
 [vars]
 testVar = "prod"
+
+[[kv_namespaces]]
+binding = "astro-poc-sample"
+id = "6b4760b8e3c74f5a8c57f4f74fc9535f"
