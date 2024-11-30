@@ -29,7 +29,7 @@ CREATE TABLE `account` (
 	PRIMARY KEY(`provider`, `providerAccountId`),
 	FOREIGN KEY (`userId`) REFERENCES `user`(`id`) ON UPDATE no action ON DELETE cascade
 );
---> statement-breakpoint
+--> statementW-breakpoint
 CREATE TABLE `session` (
 	`sessionToken` text PRIMARY KEY NOT NULL,
 	`userId` text NOT NULL,
