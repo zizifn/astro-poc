@@ -4,4 +4,5 @@ interface Env {
 	"astro-poc-sample": KVNamespace;
 	testVar: string;
 	testAPIToken: string;
+	"test-poc-db": D1Database;
 }
