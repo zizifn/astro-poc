@@ -17,3 +17,10 @@ database_name = "astro-poc"
 database_id = "32da2e81-48b7-4099-8fdd-4c426311b3ed"
 preview_database_id = "test-poc-db"
 migrations_dir = "drizzle/test-poc"
+
+[[d1_databases]]
+binding = "test-poc-db2"
+database_name = "test-poc"
+database_id = "152a7663-7378-406e-bbdc-7cc5c4b98533"
+preview_database_id = "test-poc-db2"
+migrations_dir = "drizzle/test-poc2"
