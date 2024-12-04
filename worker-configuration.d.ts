@@ -6,4 +6,5 @@ interface Env {
 	testAPIToken: string;
 	"test-poc-db": D1Database;
 	"test-poc-db2": D1Database;
+	ASSETS: Fetcher;
 }
