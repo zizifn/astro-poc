@@ -6,6 +6,7 @@
     "dev": "wrangler types && astro dev",
     "build": "wrangler types && astro check && astro build",
     "preview": "wrangler types && astro preview",
+    "deploy": "astro build && wrangler deploy",
     "astro": "astro",
     "drizzle-kit:generate": "drizzle-kit generate --config=config/drizzle.test-poc.config.ts",
     "drizzle-kit:migrate": "drizzle-kit migrate --config=config/drizzle.test-poc.config.ts",
