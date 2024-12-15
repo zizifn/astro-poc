@@ -30,3 +30,31 @@ migrations_dir = "drizzle/test-poc2"
 # [[r2_buckets]]
 # binding = 'test-r2' # <~ valid JavaScript variable name
 # bucket_name = 'astro-poc'
+
+[env.staging]
+name = "astro-worker-poc-james"
+compatibility_date = "2024-11-29"
+compatibility_flags = ["nodejs_compat"]
+main = "./dist/_worker.js/index.js"
+assets = { directory = "./dist", binding = "ASSETS" }
+
+[env.staging.vars]
+testVar = "staging"
+
+[[env.staging.kv_namespaces]]
+binding = "astro-poc-sample"
+id = "92fd21206e124b66a8f1cfdc0672bd61"
+
+[[env.staging.d1_databases]]
+binding = "test-poc-db"
+database_name = "astro-poc-james"
+database_id = "5c33b3b8-2c88-4fa6-8745-31211fa53df1"
+preview_database_id = "test-poc-db"
+migrations_dir = "drizzle/test-poc"
+
+[[env.staging.d1_databases]]
+binding = "test-poc-db2"
+database_name = "test-poc2-james"
+database_id = "e124b00a-f600-4f35-a239-28eb162b4e4e"
+preview_database_id = "test-poc-db2"
+migrations_dir = "drizzle/test-poc2"

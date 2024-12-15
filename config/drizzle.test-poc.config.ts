@@ -10,7 +10,7 @@ export default process.env.drizzle_env === "production"
       tablesFilter: ["/^(?!.*_cf_KV).*$/"],
       dbCredentials: {
         accountId: process.env.CLOUDFLARE_ACCOUNT_ID!,
-        databaseId: process.env.CLOUDFLARE_DATABASE_ID!,
+        databaseId: process.env.CLOUDFLARE_TEST_POC_DATABASE_ID!,
         token: process.env.CLOUDFLARE_D1_TOKEN!,
         // url: ".wrangler/state/v3/d1/miniflare-D1DatabaseObject/6db701a41c8e7cdbce4b4751fc2090d99055208972a1c41b11bf873a72d6aa07.sqlite",
       },
